@@ -3,9 +3,7 @@
   <description>Sample mobile app with Angular JS app</description>
   <author email="coldliquidflame@gmail.com">Chris White</author>
   <content src="index.html"/>
-  <!-- This now applies only to HTTP and HTTPS on Android -->
-    <access origin="*" />
-    <!-- These are needed in Cordova 3.6 and newer for Android -->
-    <access origin="mailto:*" launch-external="yes"/>
-    <access origin="tel:*" launch-external="yes"/>
+  <plugin name="cordova-plugin-whitelist" version="1"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
 </widget>
