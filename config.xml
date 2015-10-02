@@ -3,6 +3,7 @@
   <description>Sample mobile app with Angular JS app</description>
   <author email="coldliquidflame@gmail.com">Chris White</author>
   <content src="index.html"/>
+  <gap:plugin name="org.li8.inappbrowser" version="0.1" />
   <plugin name="cordova-plugin-whitelist" version="1"/>
   <access origin="*" />
   <allow-navigation href="*" />
