@@ -1,0 +1,17 @@
+{
+  "name": "Locomotive-Tracker",
+  "version": "1.2.0",
+  "description": "Log sightings of locomotives",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Chris White",
+  "dependencies": {
+    "express": "^4.12.3"
+  },
+  "devDependencies": {},
+  "private": true,
+  "minifiedPrefix": "production"
+}

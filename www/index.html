@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+        <title>Hello World</title>
+    </head>
+    <body class="container">
+
+        <ng-view></ng-view>
+
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <!-- Vendor Scripts -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js" charset="utf-8"></script>
+        <script src="js/angular.js" charset="utf-8"></script>
+        <script src="js/angular-route.js" charset="utf-8"></script>
+        <script src="js/angular-encode-uri.js" charset="utf-8"></script>
+
+        <!-- Main Application -->
+        <script src="app.js" charset="utf-8"></script>
+        <script src="app.config.js" charset="utf-8"></script>
+
+        <!-- Directives -->
+        <script src="directives/directives.js" charset="utf-8"></script>
+        <script src="directives/chevron.directive.js" charset="utf-8"></script>
+        <script src="directives/mail-to.directive.js" charset="utf-8"></script>
+
+        <!-- Filters -->
+        <script src="filters/filters.js" charset="utf-8"></script>
+        <script src="filters/telephone.filter.js" charset="utf-8"></script>
+
+        <!-- Landing Page -->
+        <script src="main/main.module.js" charset="utf-8"></script>
+        <script src="main/main.config.js" charset="utf-8"></script>
+        <script src="main/main.controller.js" charset="utf-8"></script>
+
+        <!-- My Account -->
+        <script src="account/account.module.js" charset="utf-8"></script>
+        <script src="account/account.config.js" charset="utf-8"></script>
+        <script src="account/account.controller.js" charset="utf-8"></script>
+
+        <!-- My Bill -->
+        <script src="bill/bill.module.js" charset="utf-8"></script>
+        <script src="bill/bill.config.js" charset="utf-8"></script>
+        <script src="bill/bill.controller.js" charset="utf-8"></script>
+
+        <!-- Contact Us -->
+        <script src="contact-us/contact-us.module.js" charset="utf-8"></script>
+        <script src="contact-us/contact-us.config.js" charset="utf-8"></script>
+        <script src="contact-us/contact-us.controller.js" charset="utf-8"></script>
+        <!-- <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script> -->
+    </body>
+</html>
