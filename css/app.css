@@ -1,0 +1,11 @@
+.collection-item .row  {
+  margin-bottom: 0px;
+}
+
+.card .card-action a {
+  text-transform: initial;
+}
+
+h6 {
+  font-size: 1.3rem;
+}

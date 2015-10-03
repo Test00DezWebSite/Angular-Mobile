@@ -7,9 +7,11 @@
       'ngRoute',
       /* 3rd Party Vendors */
       'rt.encodeuri',
+      'ui.materialize',
       /* Components */
       'app.directives',
       'app.filters',
+      'app.constants',
       /* Pages */
       'app.main',
       'app.account',

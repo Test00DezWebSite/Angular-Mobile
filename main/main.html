@@ -1,25 +1,20 @@
-<div class="list-group">
-  <a class="list-group-item" ng-href="#/account">
-    My Account
-    <bs-chevron />
-  </a>
-  <a class="list-group-item" ng-href="#/bill">
-    My Bill
-    <bs-chevron />
-  </a>
-  <div class="list-group-item">
-    My Usage
-    <bs-chevron />
+<nav>
+  <div class="nav-wrapper green darken-2">
+    <a href="#" class="brand-logo">Sentry</a>
+    <a href="#" data-activates="mobile-demo" data-sidenav="left" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="#">Manage Alerts</a></li>
+      <li><a href="#">Sign out</a></li>
+    </ul>
   </div>
-  <div class="list-group-item">
-    Referrals
-    <bs-chevron />
-  </div>
-  <div class="list-group-item">
-    Manage Alerts
-    <bs-chevron />
-  </div>
-  <a class="list-group-item" ng-href="#/contact-us">
-    Contact Us
-  </a>
+</nav>
+
+<div class="container">
+  <ul class="collection">
+    <a href="#/account" class="collection-item" ng-include="'main/my-account.html'"></a>
+    <a href="#/bill" class="collection-item" ng-include="'main/my-bill.html'"></a>
+    <a href="#/usage" class="collection-item" ng-include="'main/my-usage.html'"></a>
+    <a href="#/referrals" class="collection-item" ng-include="'main/my-referrals.html'"></a>
+    <a href="#/contact-us" class="collection-item" ng-include="'main/contact-us.html'"></a>
+  </ul>
 </div>

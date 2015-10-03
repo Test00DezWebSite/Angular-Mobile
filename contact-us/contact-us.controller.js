@@ -5,10 +5,11 @@
     .module('app.contact-us')
     .controller('ContactUsController', ContactUsController);
 
-  function ContactUsController($scope) {
+  function ContactUsController($scope, CompanyFax, CompanyPhone, CompanyEmail) {
     $scope.title = "Contact Us";
     $scope.accountNumber = "24680";
-    $scope.tollFreePhoneNumber = "7134015760";
+    $scope.phone = CompanyPhone;
+    $scope.email = CompanyEmail;
   }
 
 })();

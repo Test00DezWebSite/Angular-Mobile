@@ -1,17 +1,17 @@
-<div class="list-group">
-  <div class="list-group-item active">
-    {{ title }}
+<nav>
+  <div class="nav-wrapper green darken-2">
+    <a href="#" class="brand-logo">Sentry</a>
+    <ul id="nav-mobile" class="button-collapse left hide-on-med-and-up">
+        <li><a href="#/main"><i class="material-icons">arrow_back</i></a></li>
+      </ul>
   </div>
-  <div class="list-group-item">
-    My ESI/UAN
-  </div>
-  <div class="list-group-item">
-    My Address
-  </div>
-  <div class="list-group-item">
-    My Contact Info
-  </div>
-  <div class="list-group-item">
-    My Plan
-  </div>
+</nav>
+
+<div class="container">
+  <ul class="collection">
+    <a href="#/account" class="collection-item" ng-include="'account/my-account.html'"></a>
+    <a href="#/bill" class="collection-item" ng-include="'account/my-address.html'"></a>
+    <a href="#/usage" class="collection-item" ng-include="'account/my-contact-info.html'"></a>
+    <a href="#/referrals" class="collection-item" ng-include="'account/my-plan.html'"></a>
+  </ul>
 </div>

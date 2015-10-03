@@ -1,22 +1,30 @@
-<div class="list-group">
-  <div class="list-group-item active">
-    Account Number: {{ accountNumber }}
+<nav>
+  <div class="nav-wrapper green darken-2">
+    <a href="#" class="brand-logo">Sentry</a>
+    <ul id="nav-mobile" class="button-collapse left hide-on-med-and-up">
+        <li><a href="#/main"><i class="material-icons">arrow_back</i></a></li>
+      </ul>
+
   </div>
-  <p>
-    Have a question or concern?
-  </p>
-  <p>
-      Contact us, we can help.
-  </p>
-  <p>
-    Toll free: <a href="tel:7134015760">{{ tollFreePhoneNumber | tel}}</a>
-  </p>
-  <p>
-    Hours of operation:
-    Monday - Friday: 7am - 8pm CST
-    Saturdays: 8am - 5pm CST
-  </p>
-  <p>
-    <mail-to />
-  </p>
+</nav>
+
+<div class="row">
+  <div class="col s12">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title black-text">Contact us, we can help.</span>
+        <p>
+          Hours of operation:
+          <br />
+          Monday - Friday: 7am - 8pm CST
+          <br />
+          Saturdays: 8am - 5pm CST
+        </p>
+    </div>
+    <div class="card-action">
+      Toll free: <a ng-href="tel:{{ phone }}">{{ phone | tel }}</a>
+      <br />
+      Email: <a ng-href="mailto:{{ email }}">{{ email }}</a>
+    </div>
+  </div>
 </div>
