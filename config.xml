@@ -9,6 +9,7 @@
   <gap:platform name="android" />
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
+  <preference name="android-minSdkVersion" value="14"/>
   <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
