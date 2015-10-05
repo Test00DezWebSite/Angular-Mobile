@@ -4,7 +4,7 @@
   <author email="coldliquidflame@gmail.com">Chris White</author>
   <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
   <allow-intent href="http://*/*"/>
-  <allow-intent href="https://*/*"/>
+  <gap:allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
   <!--<allow-intent href="sms:*"/>-->
   <allow-intent href="mailto:*"/>
