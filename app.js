@@ -12,6 +12,8 @@
       'app.directives',
       'app.filters',
       'app.constants',
+      /* Partials */
+      'app.top-nav',
       /* Pages */
       'app.main',
       'app.account',
