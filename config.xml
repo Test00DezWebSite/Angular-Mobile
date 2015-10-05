@@ -4,11 +4,11 @@
   <author email="coldliquidflame@gmail.com">Chris White</author>
   <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
   <allow-intent href="http://*/*"/>
-  <gap:allow-intent href="https://*/*"/>
+  <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
-  <!--<allow-intent href="sms:*"/>-->
+  <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
   <!--<gap:platform name="ios" />-->
   <gap:platform name="android" />
-  <!--<gap:platform name="winphone" />-->
+  <--<gap:platform name="winphone" />-->
 </widget>
