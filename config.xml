@@ -8,6 +8,7 @@
   <author email="coldliquidflame@gmail.com">Chris White</author>
   <gap:platform name="android" />
   <gap:platform name="ios" />
+  <preference name="phonegap-version" value="cli-5.2.0" />
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
   <preference name="android-minSdkVersion" value="14"/>
