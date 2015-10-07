@@ -18,13 +18,17 @@
   <!-- Global Configuartion -->
   <preference name="phonegap-version" value="cli-5.2.0" />
   <preference name="orientation" value="portrait"/>
-  <preference name="fullscreen" value="true"/>
+  <preference name="fullscreen" value="false"/>
   <!-- Features -->
   <preference name="permissions" value="none"/>
+  <!-- Plugins -->
   <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
+  <gap:plugin name="com.phonegap.plugin.statusbar" source="npm" />
+  <preference name="StatusBarOverlaysWebView" value="true" />
+  <preference name="StatusBarBackgroundColor" value="#000000" />
 </widget>
