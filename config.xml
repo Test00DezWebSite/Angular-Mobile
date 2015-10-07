@@ -12,7 +12,6 @@
   <!-- iOS Configuration -->
   <gap:platform name="ios" />
   <preference name="target-device" value="universal"/>
-  <preference name="ios-statusbarstyle" value="black-opaque"/>
   <preference name="detect-data-types" value="true"/>
   <preference name="exit-on-suspend" value="false"/>
   <!-- Global Configuartion -->
