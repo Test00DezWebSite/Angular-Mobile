@@ -6,21 +6,21 @@
     and find payment locations.
   </description>
   <author email="coldliquidflame@gmail.com">Chris White</author>
+  <!-- Android Configuration -->
   <gap:platform name="android" />
-  <gap:platform name="ios" />
-  <preference name="phonegap-version" value="cli-5.2.0" />
-  <preference name="permissions" value="none"/>
-  <preference name="orientation" value="default"/>
   <preference name="android-minSdkVersion" value="14"/>
-  <preference name="orientation" value="default"/>
+  <!-- iOS Configuration -->
+  <gap:platform name="ios" />
   <preference name="target-device" value="universal"/>
-  <preference name="fullscreen" value="true"/>
-  <preference name="webviewbounce" value="true"/>
-  <preference name="prerendered-icon" value="true"/>
-  <preference name="stay-in-webview" value="false"/>
   <preference name="ios-statusbarstyle" value="black-opaque"/>
   <preference name="detect-data-types" value="true"/>
   <preference name="exit-on-suspend" value="false"/>
+  <!-- Global Configuartion -->
+  <preference name="phonegap-version" value="cli-5.2.0" />
+  <preference name="orientation" value="portrait"/>
+  <preference name="fullscreen" value="true"/>
+  <!-- Features -->
+  <preference name="permissions" value="none"/>
   <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
