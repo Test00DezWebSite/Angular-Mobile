@@ -5,7 +5,7 @@
     .module('app', [
       /* Angular Modules */
       'ngRoute',
-      'ngAnimate',
+      // 'ngAnimate',
       /* 3rd Party Vendors */
       'rt.encodeuri',
       'ui.materialize',
