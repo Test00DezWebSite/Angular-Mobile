@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html ng-app="app">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/materialize.css" />
-        <link rel="stylesheet" type="text/css" href="css/app.css" />
-        <title>Hello World</title>
-    </head>
-    <body class="grey lighten-3">
 
-        <ng-view></ng-view>
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="css/materialize-icons.css" rel="stylesheet"> -->
+  <link rel="stylesheet" type="text/css" href="css/materialize.css" />
+  <link rel="stylesheet" type="text/css" href="css/app.css" />
+  <title>Hello World</title>
+</head>
 
-        <script type="text/javascript" src="cordova.js"></script>
-        <!-- Vendor Scripts -->
-        <script src="js/jquery.js"></script>
-        <script src="js/materialize.js"></script>
-        <script src="js/angular.js" charset="utf-8"></script>
-        <script src="js/angular-route.js" charset="utf-8"></script>
-        <script src="js/angular-encode-uri.js" charset="utf-8"></script>
-        <script src="js/angular-materialize.js" charset="utf-8"></script>
+<body class="grey lighten-3">
+  <top-nav></top-nav>
 
-        <!-- Main Application -->
-        <script src="app.js" charset="utf-8"></script>
-        <script src="app.config.js" charset="utf-8"></script>
+  <ng-view></ng-view>
 
-        <!-- Constants -->
-        <script src="constants.js" charset="utf-8"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <!-- Vendor Scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/angular.js" charset="utf-8"></script>
+  <script src="js/angular-route.js" charset="utf-8"></script>
+  <script src="js/angular-animate.js" charset="utf-8"></script>
+  <script src="js/angular-encode-uri.js" charset="utf-8"></script>
+  <script src="js/angular-materialize.js" charset="utf-8"></script>
 
-        <!-- Directives -->
-        <script src="directives/directives.js" charset="utf-8"></script>
-        <script src="directives/chevron.directive.js" charset="utf-8"></script>
-        <script src="directives/mail-to.directive.js" charset="utf-8"></script>
+  <!-- Main Application -->
+  <script src="app.js" charset="utf-8"></script>
+  <script src="app.config.js" charset="utf-8"></script>
 
-        <!-- Filters -->
-        <script src="filters/filters.js" charset="utf-8"></script>
-        <script src="filters/telephone.filter.js" charset="utf-8"></script>
+  <!-- Constants -->
+  <script src="constants.js" charset="utf-8"></script>
 
-        <!-- Partials -->
-        <script src="navbar/top-nav.directive.js" charset="utf-8"></script>
+  <!-- Services -->
+  <script src="services/services.js" charset="utf-8"></script>
+  <script src="services/common.service.js" charset="utf-8"></script>
 
-        <!-- Landing Page -->
-        <script src="main/main.module.js" charset="utf-8"></script>
-        <script src="main/main.config.js" charset="utf-8"></script>
-        <script src="main/main.controller.js" charset="utf-8"></script>
+  <!-- Directives -->
+  <script src="directives/directives.js" charset="utf-8"></script>
+  <script src="directives/chevron.directive.js" charset="utf-8"></script>
+  <script src="directives/mail-to.directive.js" charset="utf-8"></script>
 
-        <!-- My Account -->
-        <script src="account/account.module.js" charset="utf-8"></script>
-        <script src="account/account.config.js" charset="utf-8"></script>
-        <script src="account/account.controller.js" charset="utf-8"></script>
+  <!-- Filters -->
+  <script src="filters/filters.js" charset="utf-8"></script>
+  <script src="filters/telephone.filter.js" charset="utf-8"></script>
 
-        <!-- My Bill -->
-        <script src="bill/bill.module.js" charset="utf-8"></script>
-        <script src="bill/bill.config.js" charset="utf-8"></script>
-        <script src="bill/bill.controller.js" charset="utf-8"></script>
+  <!-- Partials -->
+  <script src="navbar/top-nav.directive.js" charset="utf-8"></script>
 
-        <!-- Contact Us -->
-        <script src="contact-us/contact-us.module.js" charset="utf-8"></script>
-        <script src="contact-us/contact-us.config.js" charset="utf-8"></script>
-        <script src="contact-us/contact-us.controller.js" charset="utf-8"></script>
-    </body>
+  <!-- Landing Page -->
+  <script src="main/main.module.js" charset="utf-8"></script>
+  <script src="main/main.config.js" charset="utf-8"></script>
+  <script src="main/main.controller.js" charset="utf-8"></script>
+
+  <!-- My Account -->
+  <script src="account/account.module.js" charset="utf-8"></script>
+  <script src="account/account.config.js" charset="utf-8"></script>
+  <script src="account/account.controller.js" charset="utf-8"></script>
+
+  <!-- My Bill -->
+  <script src="bill/bill.module.js" charset="utf-8"></script>
+  <script src="bill/bill.config.js" charset="utf-8"></script>
+  <script src="bill/bill.controller.js" charset="utf-8"></script>
+
+  <!-- Contact Us -->
+  <script src="contact-us/contact-us.module.js" charset="utf-8"></script>
+  <script src="contact-us/contact-us.config.js" charset="utf-8"></script>
+  <script src="contact-us/contact-us.controller.js" charset="utf-8"></script>
+
+  <!-- Contact Info -->
+  <script src="contact-info/contact-info.module.js" charset="utf-8"></script>
+  <script src="contact-info/contact-info.config.js" charset="utf-8"></script>
+  <script src="contact-info/contact-info.controller.js" charset="utf-8"></script>
+  <script src="contact-info/billing-address.controller.js" charset="utf-8"></script>
+  <script src="contact-info/email-phone.controller.js" charset="utf-8"></script>
+</body>
+
 </html>

@@ -5,11 +5,13 @@
     .module('app.main')
     .controller('MainController', MainController);
 
-  function MainController($scope) {
+  function MainController($scope, common) {
     $scope.name = '';
     $scope.message = '';
     $scope.displayMessage = DisplayMessage;
     $scope.clearMessage = ClearMessage;
+
+    common.setTitle('Sentry');
 
 
     function DisplayMessage() {

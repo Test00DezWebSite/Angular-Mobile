@@ -5,8 +5,8 @@
     .module('app.bill')
     .controller('BillController', BillController);
 
-  function BillController($scope) {
-    $scope.title = "My Bill";
+  function BillController(common) {
+    common.setTitle("My Bill");
   }
 
 })();

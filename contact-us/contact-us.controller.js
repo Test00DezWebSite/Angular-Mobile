@@ -5,11 +5,13 @@
     .module('app.contact-us')
     .controller('ContactUsController', ContactUsController);
 
-  function ContactUsController($scope, CompanyFax, CompanyPhone, CompanyEmail) {
-    $scope.title = "Contact Us";
+  function ContactUsController($scope, common, CompanyFax, CompanyPhone, CompanyEmail) {
+    common.setTitle("Contact Us");
     $scope.accountNumber = "24680";
     $scope.phone = CompanyPhone;
     $scope.email = CompanyEmail;
+
+
   }
 
 })();

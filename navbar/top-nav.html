@@ -1,8 +1,13 @@
-<nav>
-  <div class="nav-wrapper green darken-2">
-    <a href="#" class="brand-logo">Sentry</a>
-    <ul id="nav-mobile" class="button-collapse left hide-on-large-only>
-        <li><a href="#/main"><i class="material-icons">arrow_back</i></a></li>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <div class="brand-logo">{{ title }}</div>
+      <a href="javascript:void(0)" data-activates="mobile-demo" data-sidenav="right" class="button-collapse right"><i class="material-icons">menu</i></a>
+      <a href="javascript:void(0)" ng-click="goBack()" ng-show="isHomeScreen" class="button-collapse left"><i class="material-icons">arrow_back</i></a>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">Manage Alerts</a></li>
+        <li><a href="#">Sign out</a></li>
       </ul>
-  </div>
-</nav>
+    </div>
+  </nav>
+</div>

@@ -5,8 +5,8 @@
     .module('app.account')
     .controller('AccountController', AccountController);
 
-  function AccountController($scope) {
-    $scope.title = "My Account";
+  function AccountController(common) {
+    common.setTitle("My Account");
   }
 
 })();
