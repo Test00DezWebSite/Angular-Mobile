@@ -7,80 +7,61 @@
   <meta name="msapplication-tap-highlight" content="no" />
   <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- <link href="css/materialize-icons.css" rel="stylesheet"> -->
-  <link rel="stylesheet" type="text/css" href="css/materialize.css" />
-  <link rel="stylesheet" type="text/css" href="css/app.css" />
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/lib/angular-material/angular-material.css">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- endinject -->
+
   <title>Sentry</title>
 </head>
 
-<body class="grey lighten-3">
-  <top-nav></top-nav>
-
-  <ng-view></ng-view>
-
+<body>
+  <div layout="column" layout-fill>
+    <navbar></navbar>
+    <md-content flex>
+      <ng-view></ng-view>
+    </md-content>
+  </div>
   <script type="text/javascript" src="cordova.js"></script>
-  <!-- Vendor Scripts -->
-  <script src="js/jquery.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/angular.js" charset="utf-8"></script>
-  <script src="js/angular-route.js" charset="utf-8"></script>
-  <!-- <script src="js/angular-animate.js" charset="utf-8"></script> -->
-  <script src="js/angular-touch.js" charset="utf-8"></script>
-  <script src="js/angular-encode-uri.js" charset="utf-8"></script>
-  <script src="js/angular-materialize.js" charset="utf-8"></script>
 
-  <!-- Main Application -->
-  <script src="app.js" charset="utf-8"></script>
-  <script src="app.config.js" charset="utf-8"></script>
-
-  <!-- Constants -->
-  <script src="constants.js" charset="utf-8"></script>
-
-  <!-- Services -->
-  <script src="services/services.js" charset="utf-8"></script>
-  <script src="services/common.service.js" charset="utf-8"></script>
-
-  <!-- Directives -->
-  <script src="directives/directives.js" charset="utf-8"></script>
-  <script src="directives/chevron.directive.js" charset="utf-8"></script>
-  <script src="directives/mail-to.directive.js" charset="utf-8"></script>
-
-  <!-- Filters -->
-  <script src="filters/filters.js" charset="utf-8"></script>
-  <script src="filters/telephone.filter.js" charset="utf-8"></script>
-
-  <!-- Partials -->
-  <script src="navbar/top-nav.directive.js" charset="utf-8"></script>
-
-  <!-- Landing Page -->
-  <script src="main/main.module.js" charset="utf-8"></script>
-  <script src="main/main.config.js" charset="utf-8"></script>
-  <script src="main/main.controller.js" charset="utf-8"></script>
-
-  <!-- My Account -->
-  <script src="account/account.module.js" charset="utf-8"></script>
-  <script src="account/account.config.js" charset="utf-8"></script>
-  <script src="account/account.controller.js" charset="utf-8"></script>
-
-  <!-- My Bill -->
-  <script src="bill/bill.module.js" charset="utf-8"></script>
-  <script src="bill/bill.config.js" charset="utf-8"></script>
-  <script src="bill/bill.controller.js" charset="utf-8"></script>
-
-  <!-- Contact Us -->
-  <script src="contact-us/contact-us.module.js" charset="utf-8"></script>
-  <script src="contact-us/contact-us.config.js" charset="utf-8"></script>
-  <script src="contact-us/contact-us.controller.js" charset="utf-8"></script>
-
-  <!-- Contact Info -->
-  <script src="contact-info/contact-info.module.js" charset="utf-8"></script>
-  <script src="contact-info/contact-info.config.js" charset="utf-8"></script>
-  <script src="contact-info/contact-info.controller.js" charset="utf-8"></script>
-  <script src="contact-info/billing-address.controller.js" charset="utf-8"></script>
-  <script src="contact-info/email-phone.controller.js" charset="utf-8"></script>
+  <!-- inject:js -->
+  <script src="/lib/angular/angular.js"></script>
+  <script src="/lib/angular-animate/angular-animate.js"></script>
+  <script src="/lib/angular-aria/angular-aria.js"></script>
+  <script src="/lib/angular-material/angular-material.js"></script>
+  <script src="/lib/angular-messages/angular-messages.js"></script>
+  <script src="/lib/angular-route/angular-route.js"></script>
+  <script src="/lib/angular-touch/angular-touch.js"></script>
+  <script src="/app.js"></script>
+  <script src="/app.config.js"></script>
+  <script src="/constants.js"></script>
+  <script src="/svg-icon.module.js"></script>
+  <script src="/account/account.module.js"></script>
+  <script src="/bill/bill.module.js"></script>
+  <script src="/contact-info/contact-info.module.js"></script>
+  <script src="/contact-us/contact-us.module.js"></script>
+  <script src="/main/main.module.js"></script>
+  <script src="/account/account.config.js"></script>
+  <script src="/bill/bill.config.js"></script>
+  <script src="/contact-info/contact-info.config.js"></script>
+  <script src="/contact-us/contact-us.config.js"></script>
+  <script src="/main/main.config.js"></script>
+  <script src="/services/services.js"></script>
+  <script src="/services/common.service.js"></script>
+  <script src="/directives/directives.js"></script>
+  <script src="/directives/chevron.directive.js"></script>
+  <script src="/directives/mail-to.directive.js"></script>
+  <script src="/navbar/navbar.directive.js"></script>
+  <script src="/filters/filters.js"></script>
+  <script src="/filters/telephone.filter.js"></script>
+  <script src="/account/account.controller.js"></script>
+  <script src="/bill/bill.controller.js"></script>
+  <script src="/contact-info/billing-address.controller.js"></script>
+  <script src="/contact-info/contact-info.controller.js"></script>
+  <script src="/contact-info/email-phone.controller.js"></script>
+  <script src="/contact-us/contact-us.controller.js"></script>
+  <script src="/main/main.controller.js"></script>
+  <!-- endinject -->
 </body>
 
 </html>

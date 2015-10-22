@@ -10,8 +10,6 @@
     $scope.accountNumber = "24680";
     $scope.phone = CompanyPhone;
     $scope.email = CompanyEmail;
-
-
   }
 
 })();

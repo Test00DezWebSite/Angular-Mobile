@@ -5,17 +5,21 @@
     .module('app', [
       /* Angular Modules */
       'ngRoute',
-      'ngTouch',
+      //'ngTouch',
+      'ngMessages',
+      'ngAnimate',
+      'ngAria',
+      'app.svg-icons',
       /* 3rd Party Vendors */
-      'rt.encodeuri',
-      'ui.materialize',
+      //'rt.encodeuri',
+      //'ngMaterial',
       /* Components */
       'app.services',
       'app.directives',
       'app.filters',
       'app.constants',
       /* Partials */
-      'app.top-nav',
+      'app.nav',
       /* Pages */
       'app.main',
       'app.account',

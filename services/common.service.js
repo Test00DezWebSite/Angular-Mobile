@@ -6,6 +6,7 @@
   function factory($window, $location, $rootScope) {
 
     return {
+      changeLocation: changeLocation,
       goBack: goBack,
       setTitle: setTitle
     }
@@ -17,6 +18,10 @@
     function setTitle(title) {
       title = title || 'Sentry';
       $rootScope.title = title;
+    }
+    
+    function changeLocation(route) {
+      $location.path(route);
     }
   }
 })();

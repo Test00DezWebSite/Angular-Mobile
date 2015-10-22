@@ -8,6 +8,11 @@
   function controller($scope, common) {
     common.setTitle('Update Info');
     $scope.goBack = common.goBack;
+    
+    $scope.profile = {
+      email: '',
+      phone: ''
+    };
   }
 
 })();

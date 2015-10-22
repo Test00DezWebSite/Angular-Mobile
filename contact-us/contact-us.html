@@ -1,19 +1,38 @@
-<div class="row">
+<!--<div class="row">
   <div class="col s12">
     <div class="card">
       <div class="card-content">
         <span class="card-title black-text">Contact us, we can help.</span>
         <p>
           Hours of operation:
-          <br />
-          Monday - Friday: 7am - 8pm CST
-          <br />
-          Saturdays: 8am - 5pm CST
+          <br /> Monday - Friday: 7am - 8pm CST
+          <br /> Saturdays: 8am - 5pm CST
         </p>
-    </div>
-    <div class="card-action">
-      Toll free: <a ng-href="tel:{{ phone }}">{{ phone | tel }}</a>
-      <br />
-      Email: <a ng-href="mailto:{{ email }}">{{ email }}</a>
-    </div>
-  </div>
+      </div>
+      <div class="card-action">
+        Toll free: <a ng-href="tel:{{ phone }}">{{ phone | tel }}</a>
+        <br /> Email: <a ng-href="mailto:{{ email }}">{{ email }}</a>
+      </div>
+    </div>-->
+<md-content flex layout-padding>
+  <h1>Contact us, we can help.</h1>
+  <md-card>
+    <md-card-content class="no-top-padding">
+      
+  <h4>Hours of operation</h4>
+      <p>
+        Monday - Friday: 7am - 8pm CST<br/>
+        Saturdays: 8am - 5pm CST
+      </p>
+    </md-card-content>
+  </md-card>
+  <md-card>
+    <md-card-content class="no-top-padding">
+      <h4>Call us or email us at</h4>
+      <p>
+        Toll free: <a ng-href="tel:{{ phone }}">{{ phone | tel }}</a><br />
+        Email: <a ng-href="mailto:{{ email }}?subject=Question%20for%20Account%20#%20{{ accountNumber }}">{{ email }}</a>
+      </p>
+    </md-card-content>
+  </md-card>
+</md-content>

@@ -1,0 +1,25 @@
+<md-toolbar class="md-whiteframe-z1">
+  <div class="md-toolbar-tools">
+    <md-button class="md-icon-button" aria-label="Go Back" ng-show="isHomeScreen" ng-click="goBack()">
+      <md-icon md-svg-icon="navigation:arrow_back"></md-icon>
+    </md-button>
+    <h2><span>{{ title }}</span></h2>
+    <span flex></span>
+    <md-button class="md-icon-button" aria-label="Menu" ng-click="openSideNav()">
+      <md-icon md-svg-icon="navigation:menu"></md-icon>
+    </md-button>
+  </div>
+</md-toolbar>
+
+<md-sidenav md-component-id="right" class="md-whiteframe-z2">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <span>Settings</span>
+    </div>
+  </md-toolbar>
+  <md-content>
+    <md-button class="md-primary">
+      Sign out
+    </md-button>
+  </md-content>
+</md-sidenav>

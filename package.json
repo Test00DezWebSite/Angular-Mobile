@@ -1,0 +1,23 @@
+{
+  "name": "angular-mobile",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColdLiquidFlame/Angular-Mobile.git"
+  },
+  "author": "Chris White",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ColdLiquidFlame/Angular-Mobile/issues"
+  },
+  "homepage": "https://github.com/ColdLiquidFlame/Angular-Mobile#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-main-bower-files": "^1.2.3"
+  }
+}

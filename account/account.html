@@ -1,8 +1,60 @@
-<div class="container">
+<!--<div class="container">
   <ul class="collection">
     <div class="collection-item" ng-include="'account/my-account.html'"></div>
     <div class="collection-item" ng-include="'account/my-address.html'"></div>
     <a href="#/contact-info" class="collection-item" ng-include="'account/my-contact-info.html'"></a>
     <a href="#/referrals" class="collection-item" ng-include="'account/my-plan.html'"></a>
   </ul>
-</div>
+</div>-->
+
+
+<md-list>
+  <md-divider></md-divider>
+  <md-list-item class="md-3-line" ng-click="goToAccount()">
+    <md-icon md-svg-icon="action:verified_user" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h3>My ESI/UAN</h3>
+      <p>Utility: Centerpoint</p>
+      <p>Account Number: 123456</p>
+      <!--<md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>-->
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+  <md-list-item class="md-2-line" ng-click="goToAccount()">
+    <md-icon md-svg-icon="maps:place" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h3>My Address</h3>
+      <p>
+        1234 Main St.
+        <br /> Houston, Tx 77082
+      </p>
+      <!--<md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>-->
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+    <md-list-item class="md-3-line" ng-click="goToContactInfo()">
+    <md-icon md-svg-icon="social:person" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h3>My Contact Info</h3>
+      <p>Phone: (713) 555-1234</p>
+      <p>Email: user@email.com</p>
+      <md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+      <md-list-item class="md-2-line" ng-click="goToContactInfo()">
+    <md-icon md-svg-icon="action:description" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h3>My Plan</h3>
+      <p>Plan: Midnight Owl
+      <br />
+      Price: $0.095/kWh
+      <br />
+      Plan Start Date - 3/2014
+      <br />
+      Plan End Date - 3/2016</p>
+      <!--<md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>-->
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+</md-list>

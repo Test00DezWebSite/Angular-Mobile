@@ -1,28 +1,17 @@
-<div class="row">
-  <form action="" class="col s12">
-    <div class="row">
-      <div class="input-field col s12">
-        <input type="text" id="email" class="validate">
-        <label for="email">Contact Email</label>
+<md-content>
+  <form name="profile">
+    <md-input-container>
+      <label for="email">Contact Email</label>
+      <input type="email" id="email" name="email" ng-model="email">
+      <div ng-messages="profile.email.$error">
+        <div ng-message="email">Not a valid email</div>
       </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input type="text" id="phone" class="validate">
-        <label for="phone">Contact Phone</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s6">
-        <button class="btn waves-effect waves-light full-width">
-          <i class="material-icons right">save</i> Save
-        </button>
-      </div>
-      <div class="col s6">
-        <button type="button" class="btn waves-effect waves-light full-width" ng-click="goBack()">
-          <i class="material-icons right">clear</i>Cancel
-        </button>
-      </div>
-    </div>
+    </md-input-container>
+    <md-input-container>
+      <label for="phone">Contact Phone</label>
+      <input type="phone" id="phone" ng-model="profile.phone">
+    </md-input-container>
+    <md-button class="md-primary md-raised" ng-click="goBack()">Save</md-button>
+    <md-button class="md-raised" ng-click="goBack()">Cancel</md-button>
   </form>
-</div>
+</md-content>

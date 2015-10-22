@@ -6,21 +6,24 @@
     .controller('MainController', MainController);
 
   function MainController($scope, common) {
-    $scope.name = '';
-    $scope.message = '';
-    $scope.displayMessage = DisplayMessage;
-    $scope.clearMessage = ClearMessage;
-
-    common.setTitle('Sentry');
-
-
-    function DisplayMessage() {
-      $scope.message = "Hello, " + $scope.name + "!";
+    common.setTitle();
+    
+    $scope.goToAccount = goToAccount;
+    $scope.goToBill = goToBill;
+    $scope.goToContactUs = goToContactUs;
+    
+    function goToAccount() {
+      common.changeLocation('/account');
     }
-
-    function ClearMessage() {
-      $scope.message = '';
+    
+    function goToBill() {
+      common.changeLocation('/bill');
     }
+    
+    function goToContactUs() {
+      common.changeLocation('/contact-us');      
+    }
+    
   }
 
 })();

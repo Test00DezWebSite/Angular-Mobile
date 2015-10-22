@@ -1,26 +1,31 @@
 (function() {
   angular
-    .module('app.top-nav', [])
-    .directive('topNav', topNav);
+    .module('app.nav', [])
+    .directive('navbar', navbar);
 
-  function topNav() {
+  function navbar() {
     return {
       restrict: 'E',
-      templateUrl: 'navbar/top-nav.html',
+      templateUrl: 'navbar/navbar.html',
       controller: controller
     }
   }
 
-  function controller($scope, $route, common) {
+  function controller($scope, $route, common, $mdSidenav) {
     $scope.goBack = common.goBack;
     $scope.isHomeScreen = '/' !== $route.current.$$route.originalPath;
-
+    $scope.openSideNav = openSideNav;
+    
     $scope.$on('$routeChangeStart', routeChanged);
 
     function routeChanged(angularEvent, next, current) {
       if (next.$$route) {
         $scope.isHomeScreen = '/' !== next.$$route.originalPath;
       }
+    }
+    
+    function openSideNav() {
+      $mdSidenav('right').toggle();
     }
   }
 

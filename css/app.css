@@ -1,4 +1,4 @@
-.collection-item .row  {
+/*.collection-item .row  {
   margin-bottom: 0px;
 }
 
@@ -25,4 +25,31 @@ form > .row {
 .full-width {
   display: block;
   width: 100%;
+}*/
+
+.s48 {
+  width: 48px;
+  height: 48px;
+}
+
+md-card-content > h2 {
+  margin-top: 0em;
+}
+
+.md-shadow {
+ box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.14),
+             0px 0px 2px 2px rgba(0, 0, 0, 0.098),
+             0px 0px 5px 1px rgba(0, 0, 0, 0.084);
+}
+
+md-list {
+  padding-top: 0px;
+}
+
+md-card md-card-content.no-top-padding {
+  padding-top: 0px;
+}
+
+a[href^="tel:"], a[href^="mailto:"] {
+  text-decoration: none;
 }

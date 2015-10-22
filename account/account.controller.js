@@ -5,8 +5,14 @@
     .module('app.account')
     .controller('AccountController', AccountController);
 
-  function AccountController(common) {
+  function AccountController($scope, common) {
     common.setTitle("My Account");
+    
+    $scope.goToContactInfo = goToContactInfo;
+    
+    function goToContactInfo () {
+       common.changeLocation('/contact-info');  
+    }
   }
 
 })();

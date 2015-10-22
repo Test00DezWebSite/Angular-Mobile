@@ -1,17 +1,27 @@
-<div class="list-group">
-  <div class="list-group-item active">
-    {{ title }}
-  </div>
-  <div class="list-group-item">
-    Bill Summary
-  </div>
-  <div class="list-group-item">
-    Current Bill
-  </div>
-  <div class="list-group-item">
-    Previous Bill
-  </div>
-  <div class="list-group-item">
-    Paperless Billing
-  </div>
-</div>
+<md-list>
+  <md-divider></md-divider>
+  <md-list-item class="md-2-line" ng-click="goToAccount()">
+    <md-icon md-svg-icon="action:verified_user" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h3>Bill Summary</h3>
+      <md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+    <md-list-item class="md-2-line" ng-click="goToAccount()">
+    <md-icon md-svg-icon="action:verified_user" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h3>Current Bill</h3>
+      <md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+    <md-list-item class="md-2-line" ng-click="goToAccount()">
+    <md-icon md-svg-icon="action:verified_user" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h3>Previous Bill</h3>
+      <md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+</md-list>

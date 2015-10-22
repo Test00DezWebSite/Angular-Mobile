@@ -1,4 +1,4 @@
-<div class="container">
+<!--<div class="container">
   <ul class="collection">
     <a href="#/account" class="collection-item" ng-include="'main/my-account.html'"></a>
     <a href="#/bill" class="collection-item" ng-include="'main/my-bill.html'"></a>
@@ -6,4 +6,51 @@
     <a href="#/referrals" class="collection-item" ng-include="'main/my-referrals.html'"></a>
     <a href="#/contact-us" class="collection-item" ng-include="'main/contact-us.html'"></a>
   </ul>
-</div>
+</div>-->
+
+<md-list>
+  <md-divider></md-divider>
+  <md-list-item class="md-2-line" ng-click="goToAccount()">
+    <md-icon md-svg-icon="social:person" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h4>My Account</h4>
+      <p>1234 Main St.</p>
+      <md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+  <md-list-item class="md-2-line" ng-click="goToBill()">
+    <md-icon md-svg-icon="action:payment" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h4>My Bill</h4>
+      <p>$150.49 due on March 3</p>
+      <md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+  <md-list-item class="md-2-line">
+    <md-icon md-svg-icon="av:equalizer" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h4>My Usage</h4>
+      <md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+  <md-list-item class="md-2-line">
+    <md-icon md-svg-icon="social:people" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h4>My Referrals</h4>
+      <p>You've earned $20 this month!</p>
+      <md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+  <md-list-item class="md-2-line" ng-click="goToContactUs()">
+    <md-icon md-svg-icon="action:question_answer" class="md-avatar-icon"></md-icon>
+    <div class="md-list-item-text" layout="column">
+      <h4>Contact Us</h4>
+      <md-icon class="md-secondary" md-svg-icon="navigation:chevron_right"></md-icon>
+    </div>
+  </md-list-item>
+  <md-divider></md-divider>
+</md-list>
