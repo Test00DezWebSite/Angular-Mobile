@@ -17,7 +17,7 @@
   <!-- Global Configuartion -->
   <preference name="phonegap-version" value="cli-5.2.0" />
   <preference name="orientation" value="portrait"/>
-  <preference name="fullscreen" value="true"/>
+  <preference name="fullscreen" value="false"/>
   <!-- Features -->
   <preference name="permissions" value="none"/>
   <!-- Plugins -->
