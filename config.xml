@@ -13,7 +13,6 @@
   <gap:platform name="ios" />
   <preference name="target-device" value="universal"/>
   <preference name="detect-data-types" value="true"/>
-  <preference name="exit-on-suspend" value="false"/>
   <!-- Global Configuartion -->
   <preference name="phonegap-version" value="cli-5.2.0" />
   <preference name="orientation" value="portrait"/>
@@ -27,7 +26,4 @@
   <allow-intent href="tel:*"/>
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
-  <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
-  <preference name="StatusBarOverlaysWebView" value="false" />
-  <preference name="StatusBarBackgroundColor" value="#000000" />
 </widget>
